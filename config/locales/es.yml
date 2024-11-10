@@ -1,0 +1,88 @@
+es:
+  activerecord:
+    models:
+      product: "producto"
+      category: "categorias"
+      user: "usuarios"
+    attributes:
+      product:
+        title: "Título"
+        description: "Descripción"
+        price: "Precio"
+        photo: "Foto"
+        category_id: "Categoria"
+      category:
+        name: "Nombre"
+      user:
+        email: "Correo electronico"
+        username: "Nombre de usuario"
+        password: "Contraseña"
+  common:
+    confirm: "¿Estás seguro?"
+    access_denied: "No tienes permisos para acceder a esta página"
+    not_authorized: "No tienes permiso para acceder"
+    not_fount: "No se encontró la página"
+  products:
+    edit:
+      title: "Editar producto"
+    new:
+      title: "Añadir producto"
+    index:
+      title: "Productos"
+      all: "Todos"
+      min_price: "Precio mínimo"
+      max_price: "Precio máximo"
+      query_text: "Busqueda"
+      newest: "Más nuevo"
+      expensive: "Más caro"
+      cheapest: "Más barato"
+    create:
+      created: "Tu producto se a creado correctamente"
+    update:
+      updated:  "Tu producto se ha actualizado"
+    destroy:
+      destroyed: "Tu producto se ha eliminado"
+    show:
+      edit: "Editar"
+      delete: "Eliminar"
+      view_products: "Ver más productos de %{username}"
+  categories: 
+    category:
+      edit: "Editar"
+      delete: "Eliminar"
+    index:
+      new: "Añadir categoria"
+      title: "Categorias"
+    new:
+      back: "Regresar"
+      title: "Añadir categoria"
+    edit:
+      title: "Editar categoria"
+      back: "Regresar"
+    create:
+      created: 'Tu categoría se ha creado correctamente'
+    update:
+      updated: 'Tu categoría se ha actualizado correctamente'
+    destroy:
+      destroyed: 'Tu categoría se ha eliminado correctamente'
+  shared:
+    header:
+      add: "Añadir producto"
+      categories: "Categorias"
+      name: "Vendelo"
+      logout: "Cerrar sesión"
+      login: "Iniciar sesión"
+      register: "Registrarse"
+  layouts:
+    application:
+      name: "Vendelo"
+  authentication:
+    users:
+      create:
+        created: "Usuario creado"
+    sessions:
+      create:
+        created: "Inicio de sesion exitoso"
+        failed: "Credenciales incorrectas"
+      destroy:
+        destroyed: "Cerraste la sesión"

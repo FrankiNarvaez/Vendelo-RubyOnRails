@@ -11,5 +11,24 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
-  get "/products", to: "products#index"
+
+  # procuct
+  # delete "/products/:id", to: "products#destroy"
+  # patch "/products/:id", to: "products#update"
+  # post "/products", to: "products#create"
+  # get "/products/new", to: "products#new", as: :new_product
+  # get "/products", to: "products#index"
+  # get "/products/:id", to: "products#show", as: :product
+  # get "/products/:id/edit", to: "products#edit", as: :edit_product
+  # This content the above routes:
+
+  namespace :authentication, path: "", as: "" do
+    resources :users, only: %i[new create], path: "/register",  path_names: { new: "/" }
+    resources :sessions, only: %i[new create destroy], path: "/login", path_names: { new: "/" }
+  end
+
+  resources :favorites, only: %i[ create destroy ], param: :product_id
+  resources :users, only: :show, path: "/user", param: :username
+  resources :categories, except: :show
+  resources :products, path: "/"
 end
