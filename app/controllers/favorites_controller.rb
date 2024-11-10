@@ -1,7 +1,6 @@
 class FavoritesController < ApplicationController
   def create
     product.favorites.create(user: Current.user)
-    Favorite.create(product: product, user: Current.user)
 
     redirect_to product_path(product)
   end
