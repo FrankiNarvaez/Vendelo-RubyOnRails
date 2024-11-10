@@ -23,4 +23,12 @@ class Product < ApplicationRecord
   def owner?
     user_id == Current.user&.id
   end
+
+  def favorite!
+    favorites.create(user: Current.user)
+  end
+
+  def unfavorite!
+    favorites.find_by(user: Current.user).destroy
+  end
 end
