@@ -65,6 +65,9 @@ es:
       updated: 'Tu categoría se ha actualizado correctamente'
     destroy:
       destroyed: 'Tu categoría se ha eliminado correctamente'
+  favorites:
+    index:
+      title: "Mis productos favoritos"
   shared:
     header:
       add: "Añadir producto"
@@ -73,6 +76,7 @@ es:
       logout: "Cerrar sesión"
       login: "Iniciar sesión"
       register: "Registrarse"
+      favorites: "Productos favoritos"
   layouts:
     application:
       name: "Vendelo"
